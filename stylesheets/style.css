@@ -13,7 +13,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #fff;
-	background-color: #ddd;
+	background-color: #F2F2F2;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -29,12 +29,21 @@ body {
 	overflow: hidden;
 	margin: 0px auto;
 	position: relative; 
-	background-color: #ddd;
+	background-color: #F2F2F2;
 }
 
 .topPanel {
 	position: relative;
 	overflow: hidden;
+}
+
+.topPanel img {
+	float: left;
+	padding-right: 50px;	
+}
+
+.topPanel p {
+	color:#7F7F7F;
 }
 
 /*TOP RETURN BUTTON*/
@@ -109,6 +118,15 @@ body {
 
 .sectionContent img {
 	width: 70%;
+}
+
+.persona {
+	width: 100%;
+	color: #555;
+}
+
+.persona img{
+	width: 40% !important; 
 }
 
 #nav li {
