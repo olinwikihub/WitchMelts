@@ -10,6 +10,7 @@ html, body { margin: 0; padding: 0;}
 
 body {
 	font-family: 'Open Sans';
+	font-size: 12pt;
 	margin: 0;
 	padding: 0;
 	color: #fff;
@@ -21,7 +22,6 @@ body {
 	-ms-user-select: none;
 	user-select: none;
 }
-
 
 .content {
 	width: 100%;
@@ -35,6 +35,8 @@ body {
 .topPanel {
 	position: relative;
 	overflow: hidden;
+	margin: 0px auto;
+	width: 90%;
 }
 
 .topPanel img {
@@ -132,6 +134,7 @@ body {
 #nav li {
 	display: inline-block;
 	list-style-type: none;
+	margin-bottom: 10px;
 }
 
 a {
@@ -141,7 +144,7 @@ a {
 	color: #fff;
 	background-color: #ccc;
 	border-radius: 2.5em;
-	margin: 1em;
+	margin: .5em;
 }
 
 footer a {
