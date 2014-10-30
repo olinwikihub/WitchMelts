@@ -1,0 +1,178 @@
+extends layout_main
+
+block content
+    .sections
+        #ProjBrief.sectionHeader Project Brief
+        section.sectionContent
+            p
+                | LinkedIn users have access to large amounts of data on LinkedIn, but they are not able to gain new insights from it that would allow them to build stronger relationships from their network.  The interface on LinkedIn makes it difficult to see their network’s information. This project will raise the bar of social sites to improve the relationships between their users rather than simply archiving the connections. We will transform LinkedIn information into data visualizations that afford users the ability to identify commonalities or interests shared by many of their connections.  Our data visualizations help users identify opportunities for personal growth, which they can do with people already in their network.
+            center
+                img(src='images/initAppSketch.png')
+            p
+                | This design allows users to visualize existing paths to their goals through their pre-existing connections on LinkedIn, addressing the core problem that users are currently unaware of the extent of their network paths and how to use those paths to meet specific career goals.
+            p
+                | To make collecting information and feedback from users an efficient and enjoyable experience, we have prepared some initial thoughts for what we want to ask our users:
+            ul
+                li
+                    | How do you currently discover opportunities and other companies? What are the steps that you take to create your network and find new areas to move toward?
+                li How do you currently use LinkedIn?
+                li
+                    | What are some of the current challenges that you face when networking? What are some challenges you face when using LinkedIn?
+                li What are your goals when networking?
+            p
+                | Of course, the information we want from our users varies considerably depending on the stage of our development. Therefore, we also have a tentative process for how we want to engage with our users. First, we’d like to collect information through interviews and observation. We will not only ask our users relevant questions for the time frame, but we’ll also try to do what they do ourselves and reflect on our process. Later on, as we produce more polished prototypes, we will again meet with our users shortly to gauge their reactions to our designs and reposition our development in an iterative fashion. People who may be good candidates for us to reach out to include: professional planners at major universities who are power users for LinkedIn, students from colleges looking for internships and jobs, young and elderly professionals, and even startups such as Proximate who are working on making networking easier in the future.
+            p
+                | To meet everyone’s learning goals, we will meet consistently in and out of the classroom. We will have open communication among members about how the project is going and we will regularly revisit the team contract to make sure all of our team goals and individual goals are being met.
+            .splitter
+        #InspDes.sectionHeader Inspirational Designs
+        section.sectionContent
+            h3 LinkedIn - John
+            center
+                img(src='images/linkedIn1.png')
+            p
+                | LinkedIn is a social media platform with the goal of affording users the ability to network online. This includes maintaining connections with people who they have met in person and reaching out to new people in a chosen industry. The data on LinkedIn provides potential to gain useful insights about an individual's network. Since the data has been vetted by LinkedIn, it is very relevant to networking. We will utilize LinkedIn to inform us about what is important to networking, but will create a better way to absorb this data from a user’s perspective.
+            center
+                img(src='images/linkedIn2.png')
+            p
+                | The above screenshot shows LinkedIn’s interface to comb through the data held by LinkedIn. It is possible to put in several different search criteria on the left hand side of the page. We could use the similar search criteria in our project, but create a more user friendly display of the people found by that search, through data visualization.
+            h3 Proximate - Chelsea
+            center
+                img(src='images/proximate1.jpg')
+            p
+                | Proximate is ideologically similar to what our app is trying to do. The goal of their site is to create visualizations of your network based on the people you met and connected with at an event. We can draw inspiration from their method of visualization. They have lines that represent the connections between people at the event and allow you to highlight a specific node to see those connections in particular. The UI itself is quite messy and does not provide any details beyond a name and face.
+            p
+                | We could draw inspiration from this visual, but make the personal information of the people one is connected to more easily accessible and organize the connections in a cleaner format so that it is easier to read/interpret output.
+            center
+                img(src='images/proximate2.jpg')
+            p
+                | This second screenshot shows the bigger picture of Proximate. They have a name-based search functionality which we could expand to do searches based on careers/skills instead of finding one specific connection. As opposed to their main visualization, the left panel is very clear and neat. We could implement a similar design to easily convey the options users have when exploring our site.
+            h3 InMaps - David
+            p
+                | You may consider InMaps as the last iteration of our idea brought together by the team at LinkedIn. InMaps “provides a visual representation of your professional LinkedIn universe. This appealing visualization tool allows anyone with a Linkedin account to map their professional ties and is a great way to understand the relationship patterns between you and your entire set of LinkedIn connections.” However, this project did not seem to be successful, as the company discontinued the visualization tool at the beginning of this very month. InMaps decorates each of your connections as a node and bridges nodes together based on how well the people you know connection. In effect, this produces a gigantic web that also reveals how your network clusters. InMaps is relevant to our project because we share the similar goals of making user networks more useful for professionals. LinkedIn has a rich collection of information, but people as we’ve noticed so far rarely could take advantage of the full potential. The “webbing creation” is what we wanted to go with before doing more of this research; as we see following, this generates a tremendous amount of clutter and dense groupings. We like how color separates groups from one another, demonstrating how clusters can be visualized in a bigger picture. One thing that InMaps primarily lacked was the ability to reveal opportunities, and this may be the key factor that separates this novel toy-like projection from being a real value booster for the professionals.
+            center
+                img(src='images/inMaps1.gif')
+            p
+                | The first insight I’ve gained was from the way names were labelled. If you look, the names are actually not labelled, and you have to hover over them to know what contacts you are looking at. This greatly reduces clutter on the page, but it may be confusing for people who don’t see any people on the screen. If you hover your mouse over the cluster, the name does pop up, but no additional information is displayed. Another insight is that the user is placed at the center of the page, and the whole network is visualized in one map. There is no ability to zoom in and see individual areas, so you have to see the map as an comprehensive entity with you as the center.
+            p
+                | It may make sense that this is the first step to take when creating a new visualization tool. By focusing on what LinkedIn thought was important, their developers were able to reveal the clusters that surround a person’s professional life. This gives us a sense of what groups of people I should try to expand, or which area of my network should I work to strengthen. I think what we can take away from LinkedIn’s attempt is to start simple and work in a useful direction. Stay away from the arcane and the confusing; it may be because of the clusters and the lack of good labels that users did not find good value in the visualizer. InMaps also tells us that we should clearly define who our users are and what they are trying to accomplish to fit a mapping better to their needs.
+            center
+                img(src='images/inMaps2.jpg')
+            h3 Amazon - Claire
+            p
+                | We chose to look closely at Amazon because Amazon has a rather seamless search and filter experience. In our product we need to allow users to search and filter results to tailor to their personal goals in a way that is intuitive and not overwhelming.
+            p
+                | Because of the enormity of Amazon’s catalogue, it is imperative to their user experience that their search and filter functionality be seamless. And I would say that for the most part, it is. I demonstrated this by searching for a shower head. When I first search for a shower head, there are 13,102 results. This might seem overwhelming, but really isn’t to the user because the top results are strategically (and algorithmically) chosen to be the ones most popular and highest rated. These results alone are what the average user is looking for.
+            center
+                img(src='images/amazon1.png')
+            p
+                | My main concern looking at the way Amazon handles filters is they are designing for edge cases. There is a lot of pretty extraneous filtering functionality that is extremely specific to whatever you search for, in this case shower heads. While this might be helpful, and seem really useful, the average user is going to look at just the first few things that pop up on the screen since they are filtered to show top rated products that are relevant to the search.
+            center
+                img(src='images/amazon2.jpg')
+            p
+                | Upon further reflection, however, I came to the conclusion that while these specific filters may not be relevant to the average user, Amazon has designed the page in such a way, that this is not at all a hinderance to the average user. The main focus of the page are the top results and what most users will care the most about.
+            p
+                | Also, when you look closely at the order of filters, they go from top to bottom what is probably most valuable to an average user to what is probably least valuable to the average user. The average user probably cares most about price, general categories of the product, and reviews, which are 3 of the first things you can filter by. Toward the bottom we get filters like who the seller is, packaging options, and how recently the item was stocked, things the average user probably doesn’t care about.
+            p
+                | Overall, I think we can take away a lot of this style of search and filter for our own product. Specifically the way Amazon has made their filtering very customizable but it is still usable and does not get in the way of the most important part of the searching, which are the results.
+            .splitter
+        #NeedsAnal.sectionHeader Needs Analysis
+        section.persona
+            .splitter
+            h3 PEOPLE AND PERSONAS
+            p
+                | There is a large population of professionals who maintain their world through the connections they make, and they are constantly impacted by services such as LinkedIn, meetups, networking events, and conferences. For our software application design course, we are primarily interested in making the networking experience through online mediums more valuable and impactful for these professionals. With this big idea, we have identified the following personas that may represent our target users.
+            ul
+                li
+                    center
+                        img(src='images/Sammy.jpg')
+                    p
+                        b Sammy the Survivor
+                        | is a bioengineering college junior at Tufts University looking to find work in industry for the first time. She has spent the past two summers conducting research at local universities, but she’s only now realized that research is not the career path she wants to lead. One major reason Sammy stuck to research was that she had some bad networking experiences that didn’t lead to any promising job leads. Now Sammy feels trapped since she recognizes the importance of networking, but she still cannot find the confidence and the comfort to pursue networking. Sammy likes to justify that networking is just “chitter chatter” and that at every event “everyone feels canned” and inauthentic.
+                    p
+                        | In terms of her efforts online, Sammy has been applying directly to different companies through their websites. She says, “I see the value in LinkedIn, but I don’t know how to use it well.” In LinkedIn, Sammy has a few strong connections, and she only wants to be found and reached out to.
+                    p
+                        | Sammy values her skill sets above networking, and she thinks authenticity is really important. Sammy needs for her skills to be recognized and shine above her difficulties in professional networking.
+                li
+                    center
+                        img(src='images/Vicky.jpg')
+                    p
+                        b Vicky the Veteran
+                        | is a 55 year old financial consulting leader in her private firm. Vicky received her MBA from the University of Pennsylvania, and she went to work for a consulting firm after receiving her degree. Being part of the generation where “meeting people was in the real world” and social networks have not yet been invented, Vicky built her network predominantly by face-to-face. There were less professionals back then, and Vicky did not struggle as much with a competitive job market. She treated networking more naturally and felt like she was creating friends. Getting the consulting experience she needs, she found connections who recommended her to Proctor and Gamble, where she worked for a few more years. When she left P&G, she earned the trust and respect of the people she’s had the opportunity to meet, and from there on all of her gigs were through her friends reaching out to her. In the past the 20 years, her network has only grown and become stronger. With her big network, Vicky managed to find a way to stay in touch by sending annual Christmas cards of her family, of which she follows up with a direct email. She is the mother of two children, both of which has gone through college and are leading their own lives.
+                    p
+                        | Vicky doesn’t actively use LinkedIn. Instead, people send her invites to her email, and she occasionally adds them to her online network. Personally, Vicky is intimidated by LinkedIn and all the ‘gizmos’ she would have to figure out.
+                    p
+                        | Vicky values interpersonal connections not only because her career is supported on it but also because she values the people she knows. Understanding that the times are changing, Vicky needs to stay “hip” and relevant, but nothing that young people do seem natural and easy to her.
+                li
+                    center
+                        img(src='images/Talu.jpg')
+                    p
+                        b Talu the Tenacious
+                        | is a 29 year old MBA student freshly graduated from Harvard Business School. Before going to Harvard Business, Talu spent some time in industry as a project manager at New Balance. Talu went to Lesley University for his undergrad, majoring in sociology and minoring in psychology. As he worked through his PM career, he’s come to realize that “it’s people that make things count.” Learning more about the quality of life workers at New Balance must face in the recession, Talu now wants to make a bigger difference in the world, and with his MBA from Harvard he wishes to enter the healthcare industry. This is a big challenge for Talu since he has no network in healthcare, but he welcomes the challenge and eagerly attends networking events (at least twice a month). Talu has a mantra to “never eat alone”, and he wants to actively expand and grow his network. Thinking back a few years, Talu reminisces that he was “scared of networking in the beginning, but [he] then fell in love because of all the cool people he’s met.” Looking towards his future with health care, he says, “Networking is all about selling yourself.”
+                    p
+                        | Talu has a premium LinkedIn account with over 700 connections. He loves to spend time seeing his rank within his network to see if he’s getting enough attention on his profile. Talu actively searches for second degree connections he wants to talk with, and he also finds good relevant networking events to go.
+                    p
+                        | Talu values a wide net of useful contacts. His motivation revolves around power, achievement, and association. What Talu really needs is a good way to sustain his rapidly growing network.
+            p
+                | From these three personas, we’ve decided to design a better experience for Sammy because she seems like she could receive the most benefit from our efforts. To be specific, choosing Sammy as our main persona would allow all of our efforts to transform her networking experience; our secondary persona Vicky could then benefit by getting better access to young talents and Talu would be able to better view and assess the existing opportunities within his already expansive network.
+            h3 PROBLEM
+            ul
+                li
+                    p
+                        | For Sammy, networking can feel “canned” which make it feel insincere.  Networking can also seem like “chitter chatter”, which makes it feel like a waste of time or simply a necessary evil.
+                li
+                    p
+                        | It is difficult for people like Sammy to reach out to others when they feel they are not being authentic.  By being inauthentic they can make the other person feel as though they are being used as a means for the networker to find a job.  This adversely affects the person being reached out too and it also makes the person looking for the job feel guilty.
+                li
+                    p
+                        | With the current job seeking interfaces on the internet it is difficult for people like Sammy to learn more about what people are interested in and then to build stronger relationships with those people based off of common interests.
+            h3 PERSPECTIVE FROM PERSONAS
+            ul
+                li
+                    p
+                        b Sammy
+                        | is our target persona, and the way she feels about the problem is address in the above section.
+                li
+                    p
+                        b Vicky
+                        | , who values interpersonal connections, would like to see more talented people like Sammy learn about the benefits of networking. If this means that we can address Sammy’s need to create more authentic relationships, we can help Sammy get out of her shell and receive the time investments VIcky is willing to make for future generations.
+                li
+                    p
+                        b Talu
+                        | , always looking for new avenues to branch out and seek for his contacts, would also be a secondary benefactor to addressing Sammy’s problem. The issue that Talu constantly face is the ability for him to maintain his large network of connections. As Sammy finds a way through our product to create real, meaningful connections, Talu can also find a way to nurture his own network by also investing in the people that he finds most important.
+        section.sectionContent
+            h3 DESIGN NARRATIVE
+            p
+                | It’s five months before the summer session starts, and Sammy has begun her quest to find her summer internship. Just two weeks ago, Tufts had a major networking fair for her department where several major companies such as Fisher came to look for talented biomedical students. Feeling nervous in her stomach, Sammy still dragged herself to the fair, and she talked to a few people before quickly scurrying away back to hang out with her friends. For some people, she had no idea what to talk about and felt a bit awkward in the space.
+            p
+                | Now that it’s been a few days, Sammy goes on LinkedIn to connect with the people she’s met, but she’s realized that her page is not completely updated. She has been putting off updating her LinkedIn because it’s a time commitment, so she feels uncomfortable ‘connecting’ with the people she met before. As the days drag on, she feels more impersonal and then just decides not to do it. Instead, she tries to figure out how to apply to the companies on their website, putting her back at square one. She visits different websites through Google, LinkedIn, and CareerBuilder to check for openings, and then she bookmarks the pages. She tells herself, “I’ll apply to these in a few days when I get to it” and goes back to working on her next assignment. When Sammy does get time to apply to some companies, she rarely hears back, and now she is getting discouraged.
+            p
+                | Sammy’s story rings true for a lot of users we met. Sammy recognizes the importance of networking, but struggles to make lasting connections through career fairs/networking events. She cares about authenticity and  developing real relationships so she feels a strong disconnect between her values and the current options for networking. The impersonal method of blindly reaching through to 2nd/3rd degree connections or acquaintances on LinkedIn makes her so paralyzed that she resorts to old more comfortable methods of job-seeking (going through a company’s website). She does not have tools available to her to help her navigate the confusing world of networking and see how her connections can push her towards her career goals, so she believes that the whole act of networking is pointless.
+            center
+                img(src='images/flow_chart_01.png')
+            h3 REQUIREMENTS
+            p
+                | The solution we develop for Sammy must make her feel authentic when reaching out to prospective connections.  To measure this we could ask if Sammy feels as though she could reach out to the Connectee after the initial meeting to ask them to come over to her house just for fun or ask the Connectee to attend an event with her.  If Sammy feels as though she cannot or will not reach out to the Connectee ever again after their initial meeting, because she does not feel that she has made a genuine friendship then we will not have met our requirement.
+            p
+                | Aside from feeling authentic, our solution must make the Connectee feel as though they are not being used.  If the Connectee feels as though they benefited from meeting Sammy then they will most likely be satisfied with the new relationship.  This could be measured by whether or not the Connectee feels as though they gained useful information from Sammy or can trust Sammy to help them in the future, should they ask for it.
+            p
+                | These solutions must accomplish their goal through an intuitive interface that is natural for a Sammy to use after her first interaction.  The Connectee must likewise be able to use the interface to aid Sammy in her future networking endeavors.
+            h3 IMPACT
+            ul
+                li
+                    p
+                        b Autonomy in Job Seeking/Networking
+                        | - Right now if a person like Sammy or Talu wants to find their second or third degree connections, they have to go through the people who are directly in their network. This is exhausting for Sammy and Talu and the people they are trying to connect to. While ideally each new connection is facilitated by someone you know, it is not practical today where people’s schedules are packed and networks are necessarily so extensive. Our design will allow Sammy and Talu to see their extended network and reach out to second and third degree connections themselves. This autonomy will help them build their own networks independently.
+                li
+                    p
+                        b Increase Network Accessibility
+                        | - We will be taking data from LinkedIn and presenting it in a visual way that is beneficial to the user’s job search. Right now it is difficult for Talu to know and understand the network he has, its extent, and what different opportunities are available through it. Sammy needs to see her network and possible paths to goals so that she can network in an informed way to achieve those goals. Our design will not only allow people like Sammy and Talu to see their network and its many subnetworks visually, but it will present this information in the way that is most useful and most conducive to job searching.
+                li
+                    p
+                        b Authenticity in Online Networking
+                        | - Our product will give both parties the feeling of authenticity when a new connection is being made. Right now, online networking can feel very impersonal and fruitless for one or both parties involved. We will bring a personalization aspect to networking where the networker feels comfortable reaching out to people they don’t know directly and the connectee feels confident that the people who are trying to connect to them are worth the time investment of building that connection.
+        #StoryBoard.sectionHeader Story Boards
+        section.sectionContent
+            center
+                img(src='images/storyboard1.jpg')
+            center
+                img(src='images/storyboard2.jpg')
