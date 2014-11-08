@@ -10,6 +10,7 @@ HTMLFILES=(
     "wireframes"
     "design_development"
     "task_breakdown"
+    "prototype"
     )
 
 for HTMLFILE in ${HTMLFILES[@]}; do
@@ -18,4 +19,4 @@ for HTMLFILE in ${HTMLFILES[@]}; do
     # && start chrome ../$HTMLFILE.html
 done
 
-start chrome ../index.html
+# start chrome ../prototype.html
