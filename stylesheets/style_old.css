@@ -1,0 +1,171 @@
+html, body { margin: 0; padding: 0;}
+
+/*html { 
+	background: url('background.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}*/
+
+body {
+	font-family: 'Open Sans';
+	font-size: 12pt;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	background-color: #F2F2F2;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.content {
+	width: 100%;
+	max-width: 1024px;
+	overflow: hidden;
+	margin: 0px auto;
+	position: relative; 
+	background-color: #F2F2F2;
+}
+
+.topPanel {
+	position: relative;
+	overflow: hidden;
+	margin: 0px auto;
+	width: 90%;
+}
+
+.topPanel img {
+	float: left;
+	padding-right: 50px;	
+}
+
+.topPanel p {
+	color:#7F7F7F;
+}
+
+/*TOP RETURN BUTTON*/
+.topReturn {
+	position: fixed;
+	width: 2.5em;
+	height: 1.5em;
+	left: -2em;
+	top: 20%;
+	background-color: #E4E4E4;
+	z-index: 10;
+	border-radius: 0.5em;
+	padding: 0.2em;
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 0.6em solid transparent;
+	border-right: 0.6em solid transparent;
+	border-bottom: 1.039em solid black;
+	z-index: 2;
+	margin-left: 1.1em;
+	margin-top: .2em;
+}
+
+.topPanel h1, .topPanel h2 {
+	display: block;
+	float: left;
+	margin: 0;
+	margin-left: 20px;
+	padding: 0;
+}
+
+.topPanel h1 {
+	font-weight: 600;
+	font-size: 3em;
+}
+
+.topPanel h2 {
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+.splitter {
+	width: 80%;
+	height: .1em;
+	position: relative;
+	float: left;
+	margin: 2% 10%;
+	background-color: #fff;
+}
+
+.sections {
+	float: left;
+	margin:0 2%;
+	width: 96%;
+}
+
+.sectionHeader {
+	color: #333;
+	font-size: 1.75em;
+	font-weight: 700;
+	float: left;
+	width: 100%;
+}
+
+.sectionContent {
+	width: 100%;
+	color: #555;
+}
+
+.sectionContent img {
+	width: 70%;
+}
+
+.persona {
+	width: 100%;
+	color: #555;
+}
+
+.persona img{
+	width: 40% !important; 
+}
+
+#nav li {
+	display: inline-block;
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: .2em 1em;
+	color: #fff;
+	background-color: #ccc;
+	border-radius: 2.5em;
+	margin: .5em;
+}
+
+footer a {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: .2em 1em;
+	color: #fff;
+	background-color: #f96876;
+	border-radius: 5em;
+	margin: 1em;
+}
+
+
+footer {
+	float: right;
+	margin-right: 2%;
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    width: 70%;
+}

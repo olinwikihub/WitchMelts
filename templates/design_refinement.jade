@@ -1,0 +1,78 @@
+extends layout_main
+
+block content
+	h1 Design Refinement
+	br      
+	h3 What is your design? How does it work?
+	p
+		| Maven is a question and answer service that revolves around "life questions". At its core, its about connecting curious users with those who have relevant experience to spark engaging face-to-face conversations. We use video chatting between matched people to allow our matches to start a conversation that revolves around a question one match poses.
+
+	p
+		| To use Maven, log in and create a simple profile about yourself, telling others what you are curious about and what you know a lot about. Also, you are recommended to create a 15 second video profile that reveals who you are in real life so that others can get a good sense of you before meeting you.
+
+	p
+		| Next, you can decide either to meet people by asking a conversation-starter question or answering other people's questions.  You can go through and select which people( + questions) are interesting to you, and if the other person also chooses you, you will get notified to set up a meeting time.
+
+	p 
+		| After an interface like WhenIsGood, you can meet with your match on our video platform and talk about the question that either you proposed, or your match asked. If you guys have a good interaction, you can connect with this person in the future beyond the scope of this app. At the end of your conversation, you can decide to give your match a gold star if your experience was a good one.
+
+	h3 What changed between paper prototyping and the proposed final design. Why?
+	:markdown
+		####We will switch from mobile over to web.
+		Based on our heuristic feedback, we realized that parts of our design are optimized for mobile and parts are optimized for web, and we were only thinking of our app in the context of mobile. Now we are moving to web, or at least a mobile-friendly website, and we need to be cognizant of those aspects that are more mobile-friendly and think about ways to make them work for web.
+
+		####We will merge all of the profile screens into one editable profile page that dynamically updates.
+		This adjustment will help us cut down on our number of screens. We also believe, based on feedback from our heuristic evaluators, that it will help users see how their profile information is being compiled while they supply the information.
+
+		####To downscope, we will remove our internal scheduling component and instead have the user interface with the existing WhenIsGood website.
+		One of the things we realized in this phase was that our project is not very well scoped. Our heuristic evaluators even commented on how many screens we seemed to have and how large our project seemed to be. One of the components we didn't even have a chance to start implementing was our idea for an in-house method for scheduling video chats. We were going to design our own calendar/scheduling interface. Once we realized this could be a project in and of itself we realized it would be best if we just remove that from our end and assume that we can instead direct users to use a pre-existing service for this part of the process.
+
+		###As our planned response to heuristic evaluation:
+
+		####Rethink how we format the top banner.
+		Our heuristic evaluators mentioned that having a more fleshed out menu bar would be beneficial especially for navigating the app. Specifically, we will be adding Q and A buttons to navigate directly to the question and answer pages instead of needing to go through the homepage
+		
+		####We will also need to define include an icon to the user's profile so they can edit it, a place for notifications to pop up, and a log-out button in the menu-bar.
+		
+		####Rethink what profile information we're requesting.
+		The main change to the user profile input will be rephrasing what information we are asking for. This will be something we test with users, because we don't know what words will yield the best results (i.e. hobbies, interests, passions, etc.)
+		
+		####Rethink organization of icons/info on each page.
+		There were a few instances where our heuristic evaluators accidentally associated icons with incorrect information because of their locations on the page. One of our evaluators also had a difficult time finding the buttons they knew they needed, because they felt they weren't intuitively placed on the screen. Lastly, while sifting through matches, our evaluators did not immediately notice the matches' questions that were displayed under the profile videos. We know that for these screens, and also for the rest of our prototype, we should rethink the organization of icons on the page and evaluate how intuitive the connections between icons and information are based on their relative positioning.
+
+	h3 What key insights did you gain this phase? [include evidence]
+	:markdown
+		####Minimal viable prototype - be more iterative in the process
+		We had a lot of constructive feedback about areas that we already knew we needed to improve, because they were comments related to the prototype being incomplete rather than how our interface was laid out.
+
+		####Scoping is important
+		We realized during our heuristic feedback that we created a rather large application with a lot of functionality and a lot of screens. While we think our app would be best on mobile, we decided to move to web because mobile is infeasible for us in the context of this course. Only one person on our team knows any mobile development, and so we can't meet our goals with only one person doing the technical work. Not only do all of us want to contribute to the final prototype, but we also want a great final product, which we can't realistically achieve with one person developing. 
+		
+		####Ramping up
+		When inputting information, it can be very overwhelming for users to have to put in a lot of information at once and especially if they don't know why they are putting it in. Our plan right now is to use example profiles as a way to help users understand what information they should be putting in and why it's important, as well as tailoring the vocabulary of the signup process to make it more clear what kind of information they should be putting in. 
+		
+		####Framing (deletion of words like mentorship and networking)
+		When people have a negative connotation with a word, it is very difficult to change that connotation. Instead, we simply won't used weighted words like networking and mentorship, and instead guide people to doing those things without networking or mentorship being the primarily goal. This way, we can avoid using those words, and our users will have the positive, constructive experience we want them to have. 
+		
+		####Backing up points with direct evidence
+		We found that we were able to back up all of our design decisions with direct evidence from things we learned from users. This was very helpful for ourselves and others to understand how we got to our current design as well as knowing that we were following good design practices and not designing through assumptions or designing for ourselves. 
+
+	h3 What questions do you have now about your project? (Areas to investigate and shortcomings)
+	:markdown
+		####How often do users want to revisit our current homepage?
+		During the heuristic evaluation we got really good feedback on our Q/A homepage. The evaluators found the page to be very intuitive and clear in how it represented the point of the app. However, they were bothered that they had to return to this page so often to access other pages. Going into this final phase we are hoping to test how often users want to see this page. We believe it might be enough to just display it during their first time through the app or whenever they login and afterwards give them options to just go directly to the Q or A individual pages.
+		
+		####How do we clarify profile information?
+		Throughout our different phases we have been continually adjusting the categories we request information for in the user's profile. Through paper prototyping and heuristic evaluations we kept getting feedback on different ways to phrase our profile information categories to clarify it for users. We are aware that our current prototype still struggles to really convey what type of information we are looking for and why. Hopefully we can further improve this.
+		
+		####Testing without InVision
+		One of the things that came up in our heuristic evaluation was that InVision will make the clickable buttons glow if a user clicks on things that aren't buttons. This affected the experience for our users, because on pages where they were confused, the prototype actually helped them identify what to click next. We hope that in moving away from InVision for our final prototype we will have the chance to test without this interference.
+		
+		####Designing for Web
+		At the end of this phase we decided to reflect on how to best prototype our product. During this phase we attempted to make an Android app as our functional prototype. Our team was not prepared for the amount of time and effort it would take to complete this prototype and eventually we switched over to InVision. Additionally we found in our heuristic evaluation that some of our evaluators would've preferred to interact with our interface if it was a website instead of a phone app. In this final phase we want to convert from a mobile-app to a mobile-friendly website. We understand that we will have to put additional thought and testing into how to reformat our design to make it work on a desktop browser.
+		
+		####Finally killing the words networking and mentorship!
+		Throughout the semester so far we have struggled to stop using the words networking and mentorship when telling people about our project. In the last phase we realized that this words have very strong connotations and they negatively affect the app experience by changing the user's perception of what the app is meant to do and how it should be used. In the final phase we will stop using these words entirely to see how that affects the perception of our app.
+		
+		####What does the introductory tutorial look like?
+		Our last addition will to be finally think through the introduction to our app. Testing has made us very aware that users need some sort of walkthrough/tutorial before they interact with our service. We will utilize the feedback we've gained so far to create a very informative and straight-forward tutorial for users.
