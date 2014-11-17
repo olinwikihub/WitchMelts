@@ -1,16 +1,16 @@
 #!/bin/bash
 
 HTMLFILES=( 
-    # "index"
-    # "project_brief"
-    # "inspirational_design"
-    # "needs_analysis"
-    # "design_narrative"
-    # "story_boards"
-    # "wireframes"
-    # "design_development"
-    # "task_breakdown"
-    # "prototype"
+    "index"
+    "project_brief"
+    "inspirational_design"
+    "needs_analysis"
+    "design_narrative"
+    "story_boards"
+    "wireframes"
+    "design_development"
+    "task_breakdown"
+    "prototype"
     "design_refinement"
     )
 
@@ -20,4 +20,4 @@ for HTMLFILE in ${HTMLFILES[@]}; do
     # && start chrome ../$HTMLFILE.html
 done
 
-start chrome ../design_refinement.html
+start chrome \../design_refinement.html
