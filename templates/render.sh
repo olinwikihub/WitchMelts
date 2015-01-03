@@ -2,17 +2,17 @@
 
 HTMLFILES=( 
     "index"
-    # "project_brief"
-    # "inspirational_design"
-    # "needs_analysis"
-    # "design_narrative"
-    # "story_boards"
-    # "wireframes"
-    # "design_development"
-    # "task_breakdown"
-    # "prototype"
-    # "design_refinement"
-    # "usability_test"
+    "project_brief"
+    "inspirational_design"
+    "needs_analysis"
+    "design_narrative"
+    "story_boards"
+    "wireframes"
+    "design_development"
+    "task_breakdown"
+    "prototype"
+    "design_refinement"
+    "usability_test"
     )
 
 for HTMLFILE in ${HTMLFILES[@]}; do
@@ -21,4 +21,4 @@ for HTMLFILE in ${HTMLFILES[@]}; do
     # && start chrome ../$HTMLFILE.html
 done
 
-start chrome \../usability_test.html
+# start chrome \../usability_test.html
